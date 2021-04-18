@@ -9,11 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class RestaurantsFragment extends Fragment {
-    RestaurantListener mListener;
+public class AccountFragment extends Fragment {
+    AccountListener mListener;
     Button buttonUpdateAccount, buttonSettings, buttonLogout;
 
-    public RestaurantsFragment() {
+    public AccountFragment() {
         // Required empty public constructor
     }
 
@@ -33,7 +33,7 @@ public class RestaurantsFragment extends Fragment {
         buttonUpdateAccount = view.findViewById(R.id.buttonUpdateAccount);
         buttonSettings = view.findViewById(R.id.buttonSettings);
         buttonLogout = view.findViewById(R.id.buttonLogout);
-        getActivity().setTitle("Restaurants");
+        getActivity().setTitle("Account");
 
         buttonUpdateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,13 +63,13 @@ public class RestaurantsFragment extends Fragment {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         try {
-            mListener = (RestaurantListener) context;
+            mListener = (AccountListener) context;
         } catch (ClassCastException e) {
             throw new ClassCastException(context.toString() + " must implement RegisterListener");
         }
     }
 
-    interface RestaurantListener{
+    interface AccountListener{
         void gotoUpdate();
         void gotoSettings();
         void logout();
