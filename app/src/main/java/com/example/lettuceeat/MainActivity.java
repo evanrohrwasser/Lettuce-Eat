@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity implements LoginFragment.LoginListener,
-        CreateAccountFragment.RegisterListener, RestaurantsFragment.RestaurantListener,
+        CreateAccountFragment.RegisterListener, AccountFragment.AccountListener,
         UpdateAccountFragment.UpdateAccountListener, SettingsFragment.SettingsListener {
 
     @Override
@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity implements LoginFragment.Log
     }
 
     @Override
-    public void goToRestaurants() {
+    public void goToRestaurants()
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.rootView, new RestaurantsFragment())
+                .replace(R.id.rootView, new AccountFragment())
                 .commit();
     }
 
