@@ -83,6 +83,5 @@ public class UpdateAccountFragment extends Fragment {
 
     interface UpdateAccountListener{
         void goToAccount();
-
     }
 }

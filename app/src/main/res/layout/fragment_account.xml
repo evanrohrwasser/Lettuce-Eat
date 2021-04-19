@@ -4,7 +4,7 @@
                                                    xmlns:tools="http://schemas.android.com/tools"
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
-                                                   tools:context=".RestaurantsFragment" android:id="@+id/frameLayout"
+                                                   tools:context=".AccountFragment" android:id="@+id/frameLayout"
                                                    android:background="#D1C4E9">
     <Button
             android:text="Settings"

@@ -4,8 +4,13 @@ import java.util.ArrayList;
 
 public class Restaurant {
     private ArrayList<Double> ratings; // could make a hashmap to better delete based on user id, or certain criteria
+    private String name;
     private Double average;
     private Double sum;
+
+    public Restaurant(){
+        //Restaurant constructor
+    }
 
     public void Rating() {
         average = 0.0;
@@ -37,5 +42,13 @@ public class Restaurant {
             sum += ratings.get(i);
         }
         average = sum / ratings.size();
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
     }
 }
