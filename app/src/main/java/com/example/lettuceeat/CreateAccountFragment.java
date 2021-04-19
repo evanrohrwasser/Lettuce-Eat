@@ -52,8 +52,8 @@ public class CreateAccountFragment extends Fragment {
                 } else if(password.isEmpty()){
                     Toast.makeText(getActivity(), "Password is required", Toast.LENGTH_SHORT).show();
                 } else {
-                    //create account and go to restaurants page
-                    mListener.goToRestaurants();
+                    //create account and go to Account page
+                    mListener.goToAccount();
 
                 }
             }
@@ -79,7 +79,7 @@ public class CreateAccountFragment extends Fragment {
     }
 
     interface RegisterListener{
-        void goToRestaurants();
+        void goToAccount();
         void gotoLogin();
     }
 }

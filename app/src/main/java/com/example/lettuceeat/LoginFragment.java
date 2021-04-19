@@ -53,7 +53,7 @@ public class LoginFragment extends Fragment {
                 } else {
                     //initiate the asyctask.
 
-                    mListener.goToRestaurants();
+                    mListener.goToAccount();
                 }
             }
         });
@@ -78,7 +78,7 @@ public class LoginFragment extends Fragment {
     }
 
     interface LoginListener{
-        void goToRestaurants();
+        void goToAccount();
         void gotoCreateAccount();
     }
 }

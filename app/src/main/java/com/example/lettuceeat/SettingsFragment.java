@@ -37,7 +37,7 @@ public class SettingsFragment extends Fragment {
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mListener.goToRestaurants();
+                mListener.goToAccount();
             }
         });
 
@@ -54,7 +54,7 @@ public class SettingsFragment extends Fragment {
     }
 
     interface SettingsListener{
-        void goToRestaurants();
+        void goToAccount();
 
     }
 }

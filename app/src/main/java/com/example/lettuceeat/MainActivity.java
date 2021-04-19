@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements LoginFragment.Log
     }
 
     @Override
-    public void goToRestaurants()
+    public void goToAccount(){
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.rootView, new AccountFragment())

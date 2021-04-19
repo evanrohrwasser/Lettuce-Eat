@@ -56,7 +56,7 @@ public class UpdateAccountFragment extends Fragment {
                     Toast.makeText(getActivity(), "Password is required", Toast.LENGTH_SHORT).show();
                 } else {
                     //create account and go to restaurants page
-                    mListener.goToRestaurants();
+                    mListener.goToAccount();
 
                 }
             }
@@ -65,7 +65,7 @@ public class UpdateAccountFragment extends Fragment {
         view.findViewById(R.id.buttonCancel).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mListener.goToRestaurants();
+                mListener.goToAccount();
             }
         });
 
@@ -82,7 +82,7 @@ public class UpdateAccountFragment extends Fragment {
     }
 
     interface UpdateAccountListener{
-        void goToRestaurants();
+        void goToAccount();
 
     }
 }
