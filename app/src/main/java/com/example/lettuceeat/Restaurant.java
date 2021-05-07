@@ -1,11 +1,17 @@
 package com.example.lettuceeat;
 
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import java.util.ArrayList;
 
 public class Restaurant {
     private ArrayList<Double> ratings; // could make a hashmap to better delete based on user id, or certain criteria
     private Double average;
     private Double sum;
+
+
 
     public void Rating() {
         average = 0.0;
