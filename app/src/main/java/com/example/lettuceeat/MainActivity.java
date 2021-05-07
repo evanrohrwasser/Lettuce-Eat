@@ -34,6 +34,13 @@ public class MainActivity extends AppCompatActivity implements LoginFragment.Log
                 .beginTransaction()
                 .add(R.id.rootView, new LoginFragment())
                 .commit();
+        Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showRestaurants();
+            }
+        });
 
     }
 
